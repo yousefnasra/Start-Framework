@@ -11,7 +11,7 @@ export default function App() {
 
   const routers = createBrowserRouter([
     {
-      path: '/Start-Framework/', element: <Layout />, children: [
+      path: '/Start-Framework', element: <Layout />, children: [
         { index: true, element: <Home></Home> },
         { path: "about", element: <About></About> },
         { path: "portfolio", element: <Portfolio></Portfolio> },
