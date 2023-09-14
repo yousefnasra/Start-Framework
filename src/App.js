@@ -13,10 +13,10 @@ export default function App() {
     {
       path: '/Start-Framework', element: <Layout />, children: [
         { index: true, element: <Home></Home> },
-        { path: "about", element: <About></About> },
-        { path: "portfolio", element: <Portfolio></Portfolio> },
-        { path: "contact", element: <Contact></Contact> },
-        {path:'*',element:<NotFound></NotFound>}
+        { path: "/Start-Framework/about", element: <About></About> },
+        { path: "/Start-Framework/portfolio", element: <Portfolio></Portfolio> },
+        { path: "/Start-Framework/contact", element: <Contact></Contact> },
+        {path:'/Start-Framework/*',element:<NotFound></NotFound>}
       ]
     }
   ])
