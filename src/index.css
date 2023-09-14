@@ -5,9 +5,116 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: white;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+:root {
+  --main-color: #2C3E50;
+  --second-color: #1ABC9C;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.navbar {
+  background-color: var(--main-color);
+  --bs-navbar-hover-color: unset;
+  --bs-navbar-brand-hover-color: unset;
+
+}
+
+.active {
+  background-color: var(--second-color);
+}
+
+.nav-link {
+  width: fit-content;
+  line-height: 24px;
+  font-weight: 700;
+  padding: 8px;
+  color: white;
+}
+
+/* home */
+.home,
+.about {
+  background-color: var(--second-color);
+  min-height: 82vh;
+}
+
+.line {
+  width: 80px;
+  height: 4px;
+  background-color: white;
+}
+
+.heading .line {
+  background-color: var(--main-color);
+}
+
+.heading h2,
+.heading .fa-star {
+  color: var(--main-color);
+}
+
+.layer {
+  background-color: #1abc9ce6;
+  opacity: 0;
+  transition: opacity .6s;
+}
+
+.layer:hover {
+  opacity: 1;
+}
+
+label {
+  color: var(--second-color);
+  margin-bottom: 7px;
+  transition: .6s top;
+}
+
+.top-hide {
+  top: 40px !important;
+}
+
+.form-control:focus {
+  box-shadow: unset;
+}
+
+footer {
+  background-color: var(--main-color);
+  text-align: center;
+  padding: 40px;
+}
+
+.card {
+  --bs-card-border-color: unset;
+  --bs-card-bg: unset;
+  color: unset;
+}
+
+.icon {
+  border: 1px white solid;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  padding: 10px;
+}
+
+.end {
+  background-color: #1A252F;
+  padding: 10px;
+}
+
+.end p {
+  padding-top: 10px;
+  color: #f0f8ff;
 }
