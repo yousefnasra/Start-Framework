@@ -5,11 +5,11 @@ import Portfolio from './Component/Portfolio/Portfolio'
 import Contact from './Component/Contact/Contact'
 import Home from './Component/Home/Home'
 import NotFound from './Component/Notfound/NotFound'
-import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import { RouterProvider, createHashRouter } from 'react-router-dom'
 
 export default function App() {
 
-  const routers = createBrowserRouter([
+  const routers = createHashRouter([
     {
       path: '', element: <Layout />, children: [
         { index: true, element: <Home></Home> },
